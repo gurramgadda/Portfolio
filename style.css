@@ -201,6 +201,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 5px 15px rgba(255, 0, 79, 0.75);
 }
 .project img{
     width: 100%;

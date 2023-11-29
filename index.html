@@ -87,33 +87,43 @@
 <!----------------------Services------------------------->
      <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">My Experiences</h1>
             <div class="services-list">
-                <div>
-                    <i class='fas fa-code'></i>
-                    <h2>Software Development</h2>
+                
+                <a href="#services" class="popoverTrigger">
+                <!-- <a href="./more-details.html" class="popoverTrigger"> -->
+                    <i class='fas fa-briefcase'></i>
+                    <h2>Software Development Engineer</h2>
                     <p>
-                        Enthusiastic and motivated Software Developer with a strong foundation in computer science principles
-                        and a passion for creating innovative solutions.Proficient in C++ , DSA with a dedication to continuous 
-                        learning and staying updated with the latest industry trends.  .Eager to leverage my skills and contribute 
-                        to cutting-edge software projects.
+                        <span style="font-weight: 600;">Continuous Evolution: My Full-Time Journey of Learning and Growth at Cogoport</span><br>
+                        My journey at Cogoport began as an intern and in July 2023, a stepping stone that led to an exciting full-time adventure. 
+                        Embracing the dynamic world of logistics, I've delved into diverse projects, from enhancing the Shipment Chat to streamlining 
+                        the Job Cards workflow. Along the way, I've expanded my horizons into backend development, mastering Python, FastAPI, and 
+                        Tortoise ORM. Cogoport has been a catalyst for my professional growth, providing a fertile ground for learning, innovation,
+                        and meaningful contributions. Join me on my Cogoport odyssey and witness the transformation of an intern into a 
+                        full-fledged software maestro.
                     </p>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
+                </a>
+                <!-- <div id="pop-over" style="display: none; position: relative;"> -->
+                    <!-- <p id="popover">Click card for more details</p> -->
+                <!-- </div> -->
+                
+                <!-- <a href="./more-details.html" class="popoverTrigger"> -->
+                <a href="#services" class="popoverTrigger">
+                    <i class="fas fa-chart-line"></i>
 
-                <div>
-                    <i class='fab fa-html5'></i>
-                    <h2>Frontend Development</h2>
+                    <h2>Software Development Engineer - Intern</h2>
                     <p>
-                        Talented and driven Frontend Developer with a proficiency in HTML, CSS, JavaScript, and React.js.
-                        Skilled in creating responsive and visually appealing user interfaces. A detail-oriented problem 
-                        solver with a passion for delivering exceptional user experiences. Constantly seeking opportunities 
-                        to enhance skills and stay updated with the latest frontend technologies.
+                        <span style="font-weight: 600;">From Intern to Software Developer: My Journey of Growth and Learning at Cogoport</span><br>
+                        Embark on a journey of growth and learning as I unravel my experiences as an SDE Intern
+                         at Cogoport. From developing a comprehensive Performance Management System to streamlining 
+                         the offboarding process, I've gained invaluable hands-on experience in various aspects of 
+                         software development.
                     </p>
-                    <!-- <a href="#">Learn More</a> -->
-                </div>
+                </a>
+                <!-- </a> -->
 
-                <div>
+                <!-- <div>
                     <i class='fas fa-table'></i>
                     <h2>Data-Analyst</h2>
                     <p>
@@ -122,7 +132,7 @@
                         strong analytical mindset and the ability to communicate complex findings in a clear and actionable 
                         manner. Eager to apply skills and contribute to data-driven solutions.
                     </p>
-                    <!-- <a href="#">Learn More</a> -->
+                    <a href="#">Learn More</a> -->
                 </div>
             </div>
         </div>
@@ -202,6 +212,28 @@
 </body>
 </html>
 <!-----script----------->
+
+<script>
+    const popoverTriggers = document.getElementsByClassName('popoverTrigger');
+    const popover = document.getElementById('popover');
+    const popoverDiv = document.getElementById('pop-over');
+
+    // console.log(popoverTriggers[0])
+    // Handle popover display on hover
+    popoverTriggers.forEach(popoverTrigger => { 
+        console.log(popoverTrigger,"....")
+        popoverTrigger.addEventListener('mouseover', () => {
+            popover.style.display = 'block';
+            // popoverDiv.style.display = 'block';
+        });
+
+        // Handle popover hiding on mouseout
+        popoverTrigger.addEventListener('mouseout', () => {
+            popover.style.display = 'none';
+        });
+    });
+</script>
+  
 <script>
     var tabLinks = document.getElementsByClassName("tab-links");
     var tabContents = document.getElementsByClassName("tab-contents");

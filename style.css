@@ -154,27 +154,6 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-#popover{
-    display: none;
-    position: absolute;
-    top: 10px;
-    background: var(--primary-styling-color);
-    color: var(--primary-text-color);
-    height: fit-content;
-    width: fit-content;
-    padding: 5px 10px;
-    border-radius: 25px;
-    border: 1px solid #ccc;
-    z-index: 1;
-}
-
-  /* Position the popover above the button */
-  #popover {
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -10px);
-  }
-
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
